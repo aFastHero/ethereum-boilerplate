@@ -73,7 +73,13 @@ const App = () => {
 
         <div style={styles.content}>
           <Switch>
+            <Route path="/nftMarket">
+              <NFTBalance />
+            </Route>
             <Route path="/nftBalance">
+              <NFTBalance />
+            </Route>
+            <Route path="/transactions">
               <NFTBalance />
             </Route>
             <Route path="/nonauthenticated">

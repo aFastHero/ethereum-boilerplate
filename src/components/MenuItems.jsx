@@ -18,8 +18,14 @@ function MenuItems() {
       }}
       defaultSelectedKeys={[pathname]}
     >
-      <Menu.Item key="/nftBalance">
-        <NavLink to="/nftBalance">🖼 NFTs</NavLink>
+      <Menu.Item key="nftMarket">
+        <NavLink to="/nftMarket">🛒 Explore</NavLink>
+      </Menu.Item>
+      <Menu.Item key="nft">
+        <NavLink to="/nftBalance">🖼️ Your Collection</NavLink>
+      </Menu.Item>
+      <Menu.Item key="transactions">
+        <NavLink to="/transactions">🧾 Transactions</NavLink>
       </Menu.Item>
     </Menu>
   );
