@@ -3,7 +3,7 @@ import { useMoralis, useNFTBalances } from "react-moralis";
 import { Card, Image, Tooltip, Modal, Input, Skeleton } from "antd";
 import {
   FileSearchOutlined,
-  SendOutlined,
+  // SendOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
@@ -31,7 +31,7 @@ function NFTBalance() {
   const [visible, setVisibility] = useState(false);
   const [receiverToSend, setReceiver] = useState(null);
   const [amountToSend, setAmount] = useState(null);
-  const [nftToSend, setNftToSend] = useState(null);
+  const [nftToSend] = useState(null);
   const [isPending, setIsPending] = useState(false);
   const { verifyMetadata } = useVerifyMetadata();
 
@@ -59,11 +59,6 @@ function NFTBalance() {
       setIsPending(false);
     }
   }
-
-  const handleTransferClick = (nft) => {
-    setNftToSend(nft);
-    setVisibility(true);
-  };
 
   const handleChange = (e) => {
     setAmount(e.target.value);
@@ -94,9 +89,6 @@ function NFTBalance() {
                           )
                         }
                       />
-                    </Tooltip>,
-                    <Tooltip title="Transfer NFT">
-                      <SendOutlined onClick={() => handleTransferClick(nft)} />
                     </Tooltip>,
                     <Tooltip title="Sell On OpenSea">
                       <ShoppingCartOutlined
