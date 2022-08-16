@@ -81,6 +81,16 @@ const menuItems = [
     value: "Avalanche Testnet",
     icon: <AvaxLogo />,
   },
+  {
+    key: "0x19",
+    value: "Cronos",
+    icon: <AvaxLogo />,
+  },
+  {
+    key: "0x152",
+    value: "Cronos Testnet",
+    icon: <AvaxLogo />,
+  },
 ];
 
 function Chains() {
