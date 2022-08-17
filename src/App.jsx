@@ -82,9 +82,9 @@ const App = () => {
             <Route path="/transactions">
               <NFTBalance />
             </Route>
-            <Route path="/nonauthenticated">
+            {/* <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>
-            </Route>
+            </Route> */}
           </Switch>
           <Redirect to="/nftBalance" />
         </div>

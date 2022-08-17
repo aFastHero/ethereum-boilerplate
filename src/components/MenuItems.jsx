@@ -1,9 +1,9 @@
-import { useLocation } from "react-router";
+// import { useLocation } from "react-router";
 import { Menu } from "antd";
 import { NavLink } from "react-router-dom";
 
 function MenuItems() {
-  const { pathname } = useLocation();
+  const { pathname } = "nft"; // useLocation();
 
   return (
     <Menu
